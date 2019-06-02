@@ -7,6 +7,11 @@ const Menu = () => (
         Ir a Estructura
       </Link>
     </li>
+    <li>
+      <Link to="/props">
+        Ir a Props
+      </Link>
+    </li>
   </ul>
 )
 
