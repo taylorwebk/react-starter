@@ -12,6 +12,11 @@ const Menu = () => (
         Ir a Props
       </Link>
     </li>
+    <li>
+      <Link to="/clases">
+        Ir a Clases
+      </Link>
+    </li>
   </ul>
 )
 
