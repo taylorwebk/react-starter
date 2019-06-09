@@ -17,6 +17,21 @@ const Menu = () => (
         Ir a Clases
       </Link>
     </li>
+    <li>
+      <Link to="/cclases">
+        Ir a Clases 2da Parte
+      </Link>
+    </li>
+    <li>
+      <Link to="/hooks">
+        Hooks
+      </Link>
+    </li>
+    <li>
+      <Link to="/estilos">
+        Estilos
+      </Link>
+    </li>
   </ul>
 )
 
