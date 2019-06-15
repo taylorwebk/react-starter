@@ -1,0 +1,14 @@
+import { makeStyles, createStyles } from '@material-ui/styles';
+
+const useStyles = makeStyles(theme => createStyles({
+  mainCont: {
+    display: 'flex',
+    justifyContent: 'space-around'
+  },
+  column: {
+    display: 'flex',
+    flexDirection: 'column'
+  }
+}))
+
+export default useStyles
