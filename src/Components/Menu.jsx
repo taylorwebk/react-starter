@@ -32,6 +32,11 @@ const Menu = () => (
         Estilos
       </Link>
     </li>
+    <li>
+      <Link to="/products">
+        Productos
+      </Link>
+    </li>
   </ul>
 )
 
