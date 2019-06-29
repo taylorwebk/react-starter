@@ -33,7 +33,7 @@ const NewProductForm = ({ addProduct }) => {
         <TextField placeholder="Nombre" value={name} onChange={handleInput(setName)} />
         <TextField placeholder="Desc" value={description} onChange={handleInput(setDescription)} />
         <TextField placeholder="Precio" value={price} onChange={handleInput(setPrice)} />
-        <Button onClick={handleCreate}>GUARDAR</Button>
+        <Button onClick={handleCreate} color="primary" variant="contained">GUARDAR</Button>
       </div>
     </Card>
   )
