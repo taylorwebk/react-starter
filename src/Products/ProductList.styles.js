@@ -1,6 +1,6 @@
-import { makeStyles, createStyles } from '@material-ui/styles';
+import { makeStyles, createStyles } from '@material-ui/styles'
 
-const useStyles = makeStyles(theme => createStyles({
+const useStyles = makeStyles(() => createStyles({
   cardCont: {
     marginTop: 15,
     padding: 15

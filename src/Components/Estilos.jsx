@@ -18,17 +18,15 @@ const styles = {
   }
 }
 
-const Estilos = () => {
-  return (
-    <div>
-      <h4 className="titulo">ESTILOS</h4>
-      <h3 style={styles.subtitulo}>SUBTITULO</h3>
-      <h5 style={styles.subtitulo}>SUBTITULO2</h5>
-      <button style={styles.button}>
-        BOTON
-      </button>
-    </div>
-  )
-}
+const Estilos = () => (
+  <div>
+    <h4 className="titulo">ESTILOS</h4>
+    <h3 style={styles.subtitulo}>SUBTITULO</h3>
+    <h5 style={styles.subtitulo}>SUBTITULO2</h5>
+    <button style={styles.button} type="button">
+      BOTON
+    </button>
+  </div>
+)
 
 export default Estilos

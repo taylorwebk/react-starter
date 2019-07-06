@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/dist'),
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: '[name].[chunkhash].js'
   },
   module: {
     rules: [{
@@ -99,7 +99,7 @@ module.exports = {
       filename: "index.html"
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: "[name].[chunkhash].css",
       chunkFilename: "[id].css"
     }),
     new webpack.DefinePlugin({

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, use } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Hooks = () => {
   const [inputVal, setInputVal] = useState('')
@@ -19,13 +19,13 @@ const Hooks = () => {
     <div>
       <h5>FRUTAS</h5>
       <input type="text" value={inputVal} onChange={handleInput} />
-      <button onClick={addFruta}>
+      <button onClick={addFruta} type="button">
         Agregar
       </button>
       <ol>
         {
           frutas.map((fruta, ind) => (
-            <li key={ind}>
+            <li key={ind}> {/* eslint-disable-line */}
               {fruta}
             </li>
           ))

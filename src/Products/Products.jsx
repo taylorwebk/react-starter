@@ -10,19 +10,19 @@ import makeStyles from './Products.styles'
 const Products = () => {
   const classes = makeStyles()
   const [products, setProducts] = useState([])
-  
+
   const addProduct = (product) => {
     setProducts([...products, product])
   }
 
-  const deleteProduct = (index) => () => {
+  const deleteProduct = index => () => {
     setProducts(products.filter((p, i) => i !== index))
   }
 
-  const buyProduct = (i) => () => {
+  const buyProduct = i => () => {
     setProducts(products.map((product, index) => {
       if (index === i) {
-        product.cant += 1
+        product.cant += 1 // eslint-disable-line
       }
       return product
     }))

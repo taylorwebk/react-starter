@@ -8,7 +8,9 @@ const Props = () => {
     <div>
       {titulo}
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum est sit nemo quas incidunt accusantium labore mollitia asperiores ipsum voluptas optio ratione sunt reprehenderit vel tempora quasi, doloremque minima in.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Dolorum est sit nemo quas incidunt accusantium labore mollitia
+        asperiores ipsum voluptas optio ratione sunt reprehenderit vel tempora quasi, doloremque minima in.
       </p>
       <Lista
         titulo="Frutas"
@@ -40,8 +42,8 @@ const Props = () => {
 }
 
 const Lista = ({ titulo = 'Sin elementos', subtitulo = '', elementos = [] }) => {
-
   const lisItems = elementos.map((elemento, index) => (
+    // eslint-disable-next-line
     <li key={index}>
       {elemento}
     </li>
@@ -60,25 +62,26 @@ const Lista = ({ titulo = 'Sin elementos', subtitulo = '', elementos = [] }) => 
       </h5>
       {
         !!subtitulo.length && (
-          <h6><b>sub: </b>{subtitulo}</h6>
+          <h6>
+            <b>sub: </b>
+            {subtitulo}
+          </h6>
         )
       }
       {
         elementos.length === 0
-        ? <i>no hay elementos</i>
-        : lista
+          ? <i>no hay elementos</i>
+          : lista
       }
     </div>
   )
 }
 
-const Pagina = ({ nroPag, children }) => {
-  return (
-    <fieldset>
-      <legend>{nroPag}</legend>
-      {children}
-    </fieldset>
-  )
-}
+const Pagina = ({ nroPag, children }) => (
+  <fieldset>
+    <legend>{nroPag}</legend>
+    {children}
+  </fieldset>
+)
 
 export default Props

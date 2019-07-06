@@ -9,46 +9,45 @@ import Typography from '@material-ui/core/Typography'
 
 import DeleteIcon from '@material-ui/icons/Delete'
 
-const PurchasedProductList = ({ products }) => {
-  return (
-    <div style={{ minWidth: 450 }}>
-      <Typography variant="h6">PRODUCTOS COMPRADOS</Typography>
-      <Card>
-        <List>
-          <ListItem>
-            <ListItemText
-              primary="NOMBRE:"
-            />
-            <ListItemText
-              primary="CANTIDAD:"
-            />
-            <ListItemText
-              primary="SUBTOTAL:"
-            />
-          </ListItem>
-          {
-            products.map((product, index) => (
-              <ListItem key={index}>
-                <ListItemText
-                  primary={product.name}
-                />
-                <ListItemText
-                  primary={product.cant}
-                />
-                <ListItemText
-                  primary={product.price * product.cant}
-                />
-                <ListItemSecondaryAction>
-                  <IconButton edge="end" onClick={() => console.log('ELIMINAR', index)}>
-                    <DeleteIcon />
-                  </IconButton>
-                </ListItemSecondaryAction>
-              </ListItem>
-            ))
-          }
-        </List>
-      </Card>
-    </div>
-  )
-}
+const PurchasedProductList = ({ products }) => (
+  <div style={{ minWidth: 450 }}>
+    <Typography variant="h6">PRODUCTOS COMPRADOS</Typography>
+    <Card>
+      <List>
+        <ListItem>
+          <ListItemText
+            primary="NOMBRE:"
+          />
+          <ListItemText
+            primary="CANTIDAD:"
+          />
+          <ListItemText
+            primary="SUBTOTAL:"
+          />
+        </ListItem>
+        {
+          products.map((product, index) => (
+            // eslint-disable-next-line
+            <ListItem key={index}>
+              <ListItemText
+                primary={product.name}
+              />
+              <ListItemText
+                primary={product.cant}
+              />
+              <ListItemText
+                primary={product.price * product.cant}
+              />
+              <ListItemSecondaryAction>
+                <IconButton edge="end" onClick={() => console.log('ELIMINAR', index)}>
+                  <DeleteIcon />
+                </IconButton>
+              </ListItemSecondaryAction>
+            </ListItem>
+          ))
+        }
+      </List>
+    </Card>
+  </div>
+)
 export default PurchasedProductList
