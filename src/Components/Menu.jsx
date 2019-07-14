@@ -38,6 +38,11 @@ const Menu = () => (
         Productos
       </Link>
     </li>
+    <li>
+      <Link to="/pokemon">
+        Pokemon
+      </Link>
+    </li>
   </ul>
 )
 

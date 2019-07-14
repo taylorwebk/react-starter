@@ -11,6 +11,7 @@ import Clases2 from './Components/Clases2'
 import Hooks from './Components/Hooks'
 import Estilos from './Components/Estilos'
 import Products from './Products/Products'
+import Pokemon from './Pokemon/Pokemon'
 
 const App = () => (
   <Router>
@@ -22,6 +23,7 @@ const App = () => (
     <Route path="/hooks" component={Hooks} />
     <Route path="/estilos" component={Estilos} />
     <Route path="/products" component={Products} />
+    <Route path="/pokemon" component={Pokemon} />
   </Router>
 )
 
